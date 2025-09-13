@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .active {
+            color: pink;
+        }
+    </style>
+</head> 
+<body>
+    <ul>
+        <li>测试1</li>
+        <li>测试2</li>
+        <li>测试3</li>
+    </ul>
+
+    <input type="text" value="123">
+
+    <div >123</div>
+
+    <script>
+        // let div = document.querySelector('div')
+
+        // const li = document.querySelectorAll('ul li:first-child')
+        // li.innerHTML = '测试4'
+        // console.log(li.innerHTML)
+
+
+
+        // //操作元素常用属性
+        // let input = document.querySelector('input')
+        // console.log(input.value)
+        // input.value = '789'
+        // console.log(input.value)
+
+        //  const box = document.querySelector('.box')
+
+        // box.style.width = '400px'
+        // box.style.height = '300px'
+        // box.style.backgroundColor = 'blue'
+
+
+        const div = document.querySelector('div')
+
+        //div.className = 'box'
+
+        div.classList.add('active')
+
+
+        div.classList.toggle('box')
+
+
+
+    </script>
+</body>
+</html>
